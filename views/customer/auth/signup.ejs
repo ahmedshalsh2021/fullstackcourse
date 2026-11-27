@@ -5,7 +5,7 @@
     <%- include('../includes/header.ejs') %>
     <main>
         <h1>Create New Account</h1>
-        <form action="/sign">
+        <form action="/signup" method="POST">
           <p>
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" required>
@@ -21,10 +21,10 @@
           <hr>
            <p>
             <label for="fullname">Full Name</label>
-            <input type="text" name="fullname" id="fullname" required>
+            <input type="text" name="name" id="fullname" required>
           </p>
           <p>
-            <label for="street">Full Name</label>
+            <label for="street">Street Name</label>
             <input type="text" name="street" id="street" required>
           </p>
           <p>
