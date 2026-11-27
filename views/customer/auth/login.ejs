@@ -1,0 +1,28 @@
+  <%- include('../../shared/includes/head.ejs' , {pageTitle: 'Login'}) %>
+  <link rel="stylesheet" href="/styles/forms.css">
+  <link rel="stylesheet" href="/styles/auth.css">
+  <body>
+    <%- include('../../shared/includes/header.ejs') %>
+    <main>
+        <h1>Login</h1>
+        <form action="/signup" method="POST">
+          <input type="hidden" name= "_csrf" value="<%= locals.csrfToken %>">
+          <p>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+           <p>
+            <label for="confirmEmail">Confirm Email</label>
+            <input type="email" name="confirmEmail" id="confirmEmail" required>
+          </p>
+           <p>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" minlength="6">
+          </p>
+          
+          <button class="btn">Login</button>
+           <p id="switch-form"><a href="/signup">Don't have an account? Sign up instead</a></p>
+        </form>
+    </main>
+    
+<%- include('../../shared/includes/footer.ejs') %>

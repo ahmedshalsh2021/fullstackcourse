@@ -82,3 +82,12 @@ a{
     border-color: var(--color-primary-700);
 
 }
+
+.error {
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.error h1, .error p {
+    color: var(--color-primary-100);
+}
