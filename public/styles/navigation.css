@@ -1,0 +1,45 @@
+#main-header {
+  display: flex;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0 var(--space-6);
+  border: 1px solid var(--color-primary-500);
+  background-color: var(--color-gray-500);
+}
+
+#main-header .logo {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items li {
+  margin: 0 var(--space-2);
+}
+
+#mobile-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+  cursor: pointer;
+  height: 2.25rem;
+  width: 2.25rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+#mobile-menu-btn span {
+  width: 2.25rem;
+  height: 0.2rem;
+  background-color: var(--color-gray-100);
+}

@@ -91,3 +91,22 @@ a{
 .error h1, .error p {
     color: var(--color-primary-100);
 }
+
+.alert {
+    text-align: center;
+    margin: 4rem auto;
+    padding: var(--space-4);
+    color: var(--color-error-500);
+    border: 1px solid var(--color-error-100);
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-error-100);
+}
+.alert h2 {
+    font-size: 1rem;
+    margin: var(--space-2) 0;
+    text-transform: uppercase;
+}
+.alert p {
+    
+    margin: var(--space-2) 0;
+}
